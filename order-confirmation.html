@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Confirmation - Restaurant</title>
+  <link rel="stylesheet" href="style001.css" />
+  <link rel="shortcut icon" href="./jeyy.jpg" type="image/x-icon" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">RestaurantName</div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="scan.html">Scan</a></li>
+        <li><a href="order-cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="order-confirmation.html" aria-current="page">Order Confirmation</a></li>
+      </ul>
+      <div class="cart-icon" aria-label="Shopping cart" tabindex="0">🛒</div>
+    </nav>
+  </header>
+
+  <main class="order-confirmation-page">
+    <h1>Thank you for your order!</h1>
+
+    <section class="order-summary">
+      <h2>Order Summary</h2>
+      <ul id="orderItems">
+        <!-- Order items will be listed here -->
+      </ul>
+      <p><strong>Total:</strong> $<span id="orderTotal">0.00</span></p>
+    </section>
+
+    <section class="delivery-info">
+      <h2>Estimated Preparation & Delivery Time</h2>
+      <p id="estimatedTime">30-45 minutes</p>
+    </section>
+
+    <section class="map-view">
+      <h2>Track Your Order</h2>
+      <div id="mapPlaceholder" aria-label="Map showing delivery route" tabindex="0" style="width:100%;height:300px;background:#ccc;display:flex;align-items:center;justify-content:center;">
+        <p>Map view coming soon</p>
+      </div>
+      <button id="trackOrderBtn">Track Order</button>
+    </section>
+  </main>
+
+  <script src="order-confirmation.js"></script>
+</body>
+</html>
